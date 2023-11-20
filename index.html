@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+
+                <div class="container">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        <h2>Brute Force No</h2>
+                        <p>Créer votre mot de passe</p>
+                    </div>
+
+                    <div class="options">
+                        <label><input type="checkbox" id="numbersCheckbox" checked> Avec des chiffres</label>
+                        <label><input type="checkbox" id="lowercaseCheckbox" checked> Avec des lettres
+                            minuscules</label>
+                        <label><input type="checkbox" id="uppercaseCheckbox" checked> Avec des lettres
+                            majuscules</label>
+                        <label><input type="checkbox" id="specialCharsCheckbox" checked> Avec des caractères
+                            spéciaux</label>
+                        <label><input type="checkbox" id="excludeSimilarCharsCheckbox" checked> Exclure les caractères
+                            similaires</label>
+                    </div>
+                    <hr>
+                    <div class="length-options">
+                        <label for="passwordLength">Nombre de caractères :</label>
+                        <select id="passwordLength">
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="1" title="Description 2">par +10</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                            <option value="80">80</option>
+                            <option value="90">90</option>
+                            <option value="2" title="Description 3">par +100</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                            <option value="700">700</option>
+                            <option value="800">800</option>
+                            <option value="900">900</option>
+                            <option value="3" title="Description 1">par +1000</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                            <option value="5000">5000</option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="quantity-options">
+                        <label for="passwordQuantity">Nombre de mots de passe :</label>
+                        <select id="passwordQuantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="result">
+                        <textarea id="passwordOutput" readonly></textarea>
+                        <hr>
+                        <button onclick="generatePassword()">Générer le mot de passe</button>
+                        <button onclick="copyPassword()">Copier le mot de passe</button>
+                    </div>
+                    <br>
+                    <footer>
+                        <br>
+                        <div class="center">
+                            <h1>Générateur de mot de passe</h1>
+                            <div class="copyright">Remz76620 © 2023. Tous droits réservés.</div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
